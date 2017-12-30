@@ -20,11 +20,41 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MYG-Y4-Kfh" customClass="ABLoadingView" customModule="ABLoadingView">
+                                <rect key="frame" x="137" y="70" width="100" height="100"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="JjW-f0-ji3"/>
+                                    <constraint firstAttribute="height" constant="100" id="dI8-uK-N1s"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jur-Mb-xU9" customClass="ABLoadingView" customModule="ABLoadingView">
+                                <rect key="frame" x="137" y="220" width="100" height="100"/>
+                                <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="pad-G5-331"/>
+                                    <constraint firstAttribute="width" constant="100" id="plh-Vy-sNU"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jur-Mb-xU9" firstAttribute="top" secondItem="MYG-Y4-Kfh" secondAttribute="bottom" constant="50" id="15a-jJ-RHw"/>
+                            <constraint firstItem="jur-Mb-xU9" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="2yB-KN-0se"/>
+                            <constraint firstItem="MYG-Y4-Kfh" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="7hP-FP-SAQ"/>
+                            <constraint firstItem="MYG-Y4-Kfh" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="50" id="Xcf-Gh-rID"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="117.39130434782609"/>
         </scene>
     </scenes>
 </document>

@@ -2,6 +2,8 @@
 
 ## It's under construction :construction:
 - [x] Base protocol
+- [x] Train animation
+- [ ] Success and Failure animations
 - [ ] UIView, UIImageView examples
 - [ ] UIButton spesific features
 - [ ] Cocoapods support

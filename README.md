@@ -2,7 +2,7 @@
 
 ## It's under construction :construction:
 - [x] Base protocol
-- [x] Train animation
+- [x] Train animation // (thanks [Cihan Tek](https://github.com/scihant))
 - [ ] Success and Failure animations
 - [ ] UIView, UIImageView examples
 - [ ] UIButton spesific features
